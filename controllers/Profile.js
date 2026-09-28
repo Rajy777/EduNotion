@@ -73,7 +73,7 @@ exports.deleteAccount = async (req, res) => {
         });
     }
 };
-export.getAllUserDetails = async (req, res) => {
+exports.getAllUserDetails = async (req, res) => {
     try {
         //get id
         const id = req.user.id;
@@ -99,4 +99,4 @@ export.getAllUserDetails = async (req, res) => {
             error: error.message,
         });
     }
-}
+};
